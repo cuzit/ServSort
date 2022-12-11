@@ -20,6 +20,8 @@
 		D11F767F294548F900FB55FB /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = D11F767E294548F900FB55FB /* OrderedCollections */; };
 		D11F768229454F4000FB55FB /* basedonatruestory.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D11F768129454F4000FB55FB /* basedonatruestory.mp4 */; settings = {ASSET_TAGS = (TestResources, ); }; };
 		D11F76842945580000FB55FB /* DirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F76832945580000FB55FB /* DirectoryManager.swift */; };
+		D18629402946943700ABA5E0 /* FileInformationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186293F2946943700ABA5E0 /* FileInformationHeader.swift */; };
+		D18629422946967A00ABA5E0 /* FileInformationAdditionalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18629412946967A00ABA5E0 /* FileInformationAdditionalInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		D11F76772945408700FB55FB /* FileInformationPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInformationPanel.swift; sourceTree = "<group>"; };
 		D11F768129454F4000FB55FB /* basedonatruestory.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = basedonatruestory.mp4; path = "/Users/cuzit/Documents/Cuzit Productions/Software/macOS/ServSort/ServSort/TestAssets/../../../../../../../Movies/basedonatruestory.mp4"; sourceTree = "<absolute>"; };
 		D11F76832945580000FB55FB /* DirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryManager.swift; sourceTree = "<group>"; };
+		D186293F2946943700ABA5E0 /* FileInformationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInformationHeader.swift; sourceTree = "<group>"; };
+		D18629412946967A00ABA5E0 /* FileInformationAdditionalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInformationAdditionalInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				D11F764E2945154F00FB55FB /* ContentView.swift */,
 				D11F76832945580000FB55FB /* DirectoryManager.swift */,
 				D11F76772945408700FB55FB /* FileInformationPanel.swift */,
+				D18629412946967A00ABA5E0 /* FileInformationAdditionalInfo.swift */,
+				D186293F2946943700ABA5E0 /* FileInformationHeader.swift */,
 				D11F76502945155000FB55FB /* Assets.xcassets */,
 				D11F76552945155000FB55FB /* ServSort.entitlements */,
 				D11F76522945155000FB55FB /* Preview Content */,
@@ -294,10 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D18629402946943700ABA5E0 /* FileInformationHeader.swift in Sources */,
 				D11F764F2945154F00FB55FB /* ContentView.swift in Sources */,
 				D11F76842945580000FB55FB /* DirectoryManager.swift in Sources */,
 				D11F76782945408700FB55FB /* FileInformationPanel.swift in Sources */,
 				D11F764D2945154F00FB55FB /* ServSortApp.swift in Sources */,
+				D18629422946967A00ABA5E0 /* FileInformationAdditionalInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

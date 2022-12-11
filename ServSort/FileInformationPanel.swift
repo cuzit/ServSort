@@ -9,42 +9,15 @@ import SwiftUI
 import AVKit
 
 struct FileInformationPanel: View {
-    @State var avPlayer = AVPlayer(url: Bundle.main.url(forResource: "basedonatruestory", withExtension: "mp4")!)
-    @State var isPlaying: Bool = false
+    
     var body: some View {
         VStack {
             Group {
-                Label("File Name", systemImage: /*@START_MENU_TOKEN@*/"42.circle"/*@END_MENU_TOKEN@*/)
-                Image(/*@START_MENU_TOKEN@*/"Image Name"/*@END_MENU_TOKEN@*/)
-                VideoPlayer(player: avPlayer)
-                    .onDisappear() {
-                        avPlayer.isMuted = false;
-                    }
-                    .frame(width: 320, height: 180, alignment: .center)
-                Button {
-                    isPlaying ? avPlayer.pause() : avPlayer.play()
-                    isPlaying.toggle()
-                    avPlayer.seek(to: .zero)
-                } label: {
-                    Image(systemName: isPlaying ? "Stop" : "Play")
-                        .padding()
-                }
+                FileInformationHeader()
                 Divider()
             }
             Group {
-                Text("Path: blah")
-                Text("Kind: FILETYPE")
-                Text("Size: SIZE")
-                Text("Created: DATE")
-                Text("Modified: DATE")
-                Text("Last Opened: DATE")
-                Text("Owner: OWNER")
-                Text("Group: GROUP")
-                Text("Permissions: PERM")
-                Text("Opens With (Def): APP")
-            }
-            Group {
-                Text("Additional Media Info (Depends on FileType - eg. Duration, Audio Bit Rate, Size, Etc")
+                FileInformationAdditionalInfo()
             }
             Spacer()
             Group {
