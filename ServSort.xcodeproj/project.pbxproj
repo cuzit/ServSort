@@ -14,6 +14,12 @@
 		D11F765F2945155000FB55FB /* ServSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F765E2945155000FB55FB /* ServSortTests.swift */; };
 		D11F76692945155000FB55FB /* ServSortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F76682945155000FB55FB /* ServSortUITests.swift */; };
 		D11F766B2945155000FB55FB /* ServSortUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F766A2945155000FB55FB /* ServSortUITestsLaunchTests.swift */; };
+		D11F76782945408700FB55FB /* FileInformationPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F76772945408700FB55FB /* FileInformationPanel.swift */; };
+		D11F767B294548F900FB55FB /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = D11F767A294548F900FB55FB /* Collections */; };
+		D11F767D294548F900FB55FB /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = D11F767C294548F900FB55FB /* DequeModule */; };
+		D11F767F294548F900FB55FB /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = D11F767E294548F900FB55FB /* OrderedCollections */; };
+		D11F768229454F4000FB55FB /* basedonatruestory.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D11F768129454F4000FB55FB /* basedonatruestory.mp4 */; settings = {ASSET_TAGS = (TestResources, ); }; };
+		D11F76842945580000FB55FB /* DirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F76832945580000FB55FB /* DirectoryManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,9 @@
 		D11F76642945155000FB55FB /* ServSortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServSortUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11F76682945155000FB55FB /* ServSortUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServSortUITests.swift; sourceTree = "<group>"; };
 		D11F766A2945155000FB55FB /* ServSortUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServSortUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D11F76772945408700FB55FB /* FileInformationPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInformationPanel.swift; sourceTree = "<group>"; };
+		D11F768129454F4000FB55FB /* basedonatruestory.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = basedonatruestory.mp4; path = "/Users/cuzit/Documents/Cuzit Productions/Software/macOS/ServSort/ServSort/TestAssets/../../../../../../../Movies/basedonatruestory.mp4"; sourceTree = "<absolute>"; };
+		D11F76832945580000FB55FB /* DirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D11F767B294548F900FB55FB /* Collections in Frameworks */,
+				D11F767D294548F900FB55FB /* DequeModule in Frameworks */,
+				D11F767F294548F900FB55FB /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +107,11 @@
 		D11F764B2945154F00FB55FB /* ServSort */ = {
 			isa = PBXGroup;
 			children = (
+				D11F768029454F2300FB55FB /* TestAssets */,
 				D11F764C2945154F00FB55FB /* ServSortApp.swift */,
 				D11F764E2945154F00FB55FB /* ContentView.swift */,
+				D11F76832945580000FB55FB /* DirectoryManager.swift */,
+				D11F76772945408700FB55FB /* FileInformationPanel.swift */,
 				D11F76502945155000FB55FB /* Assets.xcassets */,
 				D11F76552945155000FB55FB /* ServSort.entitlements */,
 				D11F76522945155000FB55FB /* Preview Content */,
@@ -129,6 +144,14 @@
 			path = ServSortUITests;
 			sourceTree = "<group>";
 		};
+		D11F768029454F2300FB55FB /* TestAssets */ = {
+			isa = PBXGroup;
+			children = (
+				D11F768129454F4000FB55FB /* basedonatruestory.mp4 */,
+			);
+			path = TestAssets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +168,11 @@
 			dependencies = (
 			);
 			name = ServSort;
+			packageProductDependencies = (
+				D11F767A294548F900FB55FB /* Collections */,
+				D11F767C294548F900FB55FB /* DequeModule */,
+				D11F767E294548F900FB55FB /* OrderedCollections */,
+			);
 			productName = ServSort;
 			productReference = D11F76492945154F00FB55FB /* ServSort.app */;
 			productType = "com.apple.product-type.application";
@@ -192,6 +220,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					TestResources,
+				);
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
@@ -217,6 +248,9 @@
 				Base,
 			);
 			mainGroup = D11F76402945154F00FB55FB;
+			packageReferences = (
+				D11F7679294548F900FB55FB /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = D11F764A2945154F00FB55FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D11F768229454F4000FB55FB /* basedonatruestory.mp4 in Resources */,
 				D11F76542945155000FB55FB /* Preview Assets.xcassets in Resources */,
 				D11F76512945155000FB55FB /* Assets.xcassets in Resources */,
 			);
@@ -260,6 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D11F764F2945154F00FB55FB /* ContentView.swift in Sources */,
+				D11F76842945580000FB55FB /* DirectoryManager.swift in Sources */,
+				D11F76782945408700FB55FB /* FileInformationPanel.swift in Sources */,
 				D11F764D2945154F00FB55FB /* ServSortApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = ServSort/ServSort.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -424,6 +462,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ServSort;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = ServSort/ServSort.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -451,6 +492,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ServSort;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -576,6 +619,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D11F7679294548F900FB55FB /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D11F767A294548F900FB55FB /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D11F7679294548F900FB55FB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		D11F767C294548F900FB55FB /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D11F7679294548F900FB55FB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		D11F767E294548F900FB55FB /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D11F7679294548F900FB55FB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D11F76412945154F00FB55FB /* Project object */;
 }
