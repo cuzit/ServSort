@@ -22,6 +22,8 @@
 		D11F76842945580000FB55FB /* DirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11F76832945580000FB55FB /* DirectoryManager.swift */; };
 		D18629402946943700ABA5E0 /* FileInformationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D186293F2946943700ABA5E0 /* FileInformationHeader.swift */; };
 		D18629422946967A00ABA5E0 /* FileInformationAdditionalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18629412946967A00ABA5E0 /* FileInformationAdditionalInfo.swift */; };
+		D1862945294AB19400ABA5E0 /* Files in Frameworks */ = {isa = PBXBuildFile; productRef = D1862944294AB19400ABA5E0 /* Files */; };
+		D186294B294AB30900ABA5E0 /* MediaType in Frameworks */ = {isa = PBXBuildFile; productRef = D186294A294AB30900ABA5E0 /* MediaType */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1862945294AB19400ABA5E0 /* Files in Frameworks */,
+				D186294B294AB30900ABA5E0 /* MediaType in Frameworks */,
 				D11F767B294548F900FB55FB /* Collections in Frameworks */,
 				D11F767D294548F900FB55FB /* DequeModule in Frameworks */,
 				D11F767F294548F900FB55FB /* OrderedCollections in Frameworks */,
@@ -178,6 +182,8 @@
 				D11F767A294548F900FB55FB /* Collections */,
 				D11F767C294548F900FB55FB /* DequeModule */,
 				D11F767E294548F900FB55FB /* OrderedCollections */,
+				D1862944294AB19400ABA5E0 /* Files */,
+				D186294A294AB30900ABA5E0 /* MediaType */,
 			);
 			productName = ServSort;
 			productReference = D11F76492945154F00FB55FB /* ServSort.app */;
@@ -256,6 +262,8 @@
 			mainGroup = D11F76402945154F00FB55FB;
 			packageReferences = (
 				D11F7679294548F900FB55FB /* XCRemoteSwiftPackageReference "swift-collections" */,
+				D1862943294AB19400ABA5E0 /* XCRemoteSwiftPackageReference "files" */,
+				D1862949294AB30900ABA5E0 /* XCRemoteSwiftPackageReference "MediaType" */,
 			);
 			productRefGroup = D11F764A2945154F00FB55FB /* Products */;
 			projectDirPath = "";
@@ -637,6 +645,22 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		D1862943294AB19400ABA5E0 /* XCRemoteSwiftPackageReference "files" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/files.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		D1862949294AB30900ABA5E0 /* XCRemoteSwiftPackageReference "MediaType" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/21GramConsulting/MediaType.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -654,6 +678,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D11F7679294548F900FB55FB /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = OrderedCollections;
+		};
+		D1862944294AB19400ABA5E0 /* Files */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1862943294AB19400ABA5E0 /* XCRemoteSwiftPackageReference "files" */;
+			productName = Files;
+		};
+		D186294A294AB30900ABA5E0 /* MediaType */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1862949294AB30900ABA5E0 /* XCRemoteSwiftPackageReference "MediaType" */;
+			productName = MediaType;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
