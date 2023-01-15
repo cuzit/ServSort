@@ -13,6 +13,10 @@ struct FileInformationHeader: View {
     @State var isPlaying: Bool = false
     @State var isVideo: Bool = true
     @State var isImage: Bool = false
+    
+    //Debug Vars
+    @State var showingAlert: Bool = false
+    
     var body: some View {
         VStack {
             Label("File Name", systemImage: /*@START_MENU_TOKEN@*/"42.circle"/*@END_MENU_TOKEN@*/)
@@ -25,11 +29,14 @@ struct FileInformationHeader: View {
                 .frame(width: 320, height: 180, alignment: .center)
             HStack {
                 Button {
-                    
+                    showingAlert = true
                 } label: {
-                    Text("Open With Default Application...")
+                    Text("Open...")
                     Image("Open With Default Application...")
                         .padding()
+                }
+                .alert("This is not currently implemented.", isPresented: $showingAlert) {
+                    Button("OK", role: .cancel) { }
                 }
                 Button {
                     isPlaying ? avPlayer.pause() : avPlayer.play()

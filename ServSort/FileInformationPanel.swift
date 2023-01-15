@@ -9,6 +9,7 @@ import SwiftUI
 import AVKit
 
 struct FileInformationPanel: View {
+    @State var Info: FileInfo? = nil
     
     var body: some View {
         VStack {
@@ -17,7 +18,7 @@ struct FileInformationPanel: View {
                 Divider()
             }
             Group {
-                FileInformationAdditionalInfo()
+                FileInformationAdditionalInfo(Info: Info)
             }
             Spacer()
             Group {
@@ -26,12 +27,13 @@ struct FileInformationPanel: View {
                 }
             }
         } /*@END_MENU_TOKEN@*/
-        .frame(width: 200.0, height: 800.0)
+        .frame(minWidth: 300.0, maxWidth: 300.0, maxHeight: .infinity)
     }
 }
 
 struct FileInformationPanel_Previews: PreviewProvider {
     static var previews: some View {
-        FileInformationPanel()
+        let Info: FileInfo = FileInfo.CreateWithTestInfo()
+        FileInformationPanel(Info: Info)
     }
 }

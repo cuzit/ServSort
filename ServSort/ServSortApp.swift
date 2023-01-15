@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct ServSortApp: App {
     var body: some Scene {
-        WindowGroup {
+        WindowGroup (id: "Main") {
             ContentView()
         }
+        
     }
 }
